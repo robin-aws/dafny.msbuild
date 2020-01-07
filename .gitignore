@@ -3,4 +3,5 @@
 /Source/dafny.msbuild/bin
 /Test/TestProject/obj
 /Test/TestProject/bin
-/Test/TestProject/dafny-generated
+/Test/TestProject2/obj
+/Test/TestProject2/bin
