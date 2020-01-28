@@ -6,9 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="DafnyRuntime">
-        <HintPath>..\..\..\dafny\Binaries\DafnyRuntime.dll</HintPath>
-      </Reference>
+      <PackageReference Include="DafnyRuntime" Version="1.0.0"/>
     </ItemGroup>
 
     <!--

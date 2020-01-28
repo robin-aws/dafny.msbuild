@@ -1,3 +1,5 @@
+include "../TestProject/B.dfy"
+
 module A { 
   import B
   method Splat() {

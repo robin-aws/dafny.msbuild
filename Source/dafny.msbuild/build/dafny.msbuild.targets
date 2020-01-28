@@ -13,7 +13,7 @@
             <DafnyOutputFile>$(IntermediateOutputPath)DafnyMain.cs</DafnyOutputFile>
         </PropertyGroup>
         <Message Text="Compiling Dafny source files to $(DafnyOutputFile)..." Importance="high"/>
-        <Exec Command="$(DafnyBinariesDir)$(Dafny) /out:$(DafnyOutputFile) @(DafnySource, ' ') /compile:0 /spillTargetCode:3 /noVerify" />
+        <Exec Command="$(DafnyBinariesDir)$(Dafny) /out:$(DafnyOutputFile) @(DafnySource, ' ') @(ReferencePath, ' ') /compile:0 /spillTargetCode:3 /noVerify /noIncludes /useRuntimeLib" />
         <ItemGroup>
             <Compile Include="$(DafnyOutputFile)" />
             <!-- Register the generated file to be deleted when cleaning -->
